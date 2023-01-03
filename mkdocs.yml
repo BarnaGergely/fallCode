@@ -1,0 +1,99 @@
+site_name: My Docs
+site_url: https://todo
+site_author: Gergely Barna
+site_description: >-
+  Write your documentation in Markdown and create a professional static site in
+  minutes – searchable, customizable, for all devices
+
+# Repository
+repo_name: fallCode
+repo_url: https://github.com/BarnaGergely/fallCode
+
+# Copyright
+copyright: Copyright &copy; 2022 - 2023 Barna Gergely
+
+# Configuration
+theme:
+  name: material
+  language: hu
+  features:
+        # - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    #- navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette: 
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  favicon: assets/images/favicon.png
+  logo: assets/images/logo.png
+  
+# Plugins
+plugins:
+  - search
+  # TODO: social nem működik
+  #- social
+
+# Customization
+extra:
+
+  # Cookies
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#social-links
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/squidfunk
+      name: squidfunk on Twitter
+
+# Extensions
+#markdown_extensions:
+
+# Page tree
+#nav:
+#  - Főoldal: index.md
+
+extra_css:
+  - stylesheets/extra.css
